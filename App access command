@@ -1,0 +1,23 @@
+import webbrowser
+
+print("🎤 Voice Command Assistant")
+print("Keyboard microphone se bolo:")
+print("YouTube, Google ya Exit")
+
+while True:
+    command = input("Command bolo: ").lower().strip()
+
+    if "youtube" in command:
+        print("YouTube khol raha hoon...")
+        webbrowser.open("https://www.youtube.com")
+
+    elif "google" in command:
+        print("Google khol raha hoon...")
+        webbrowser.open("https://www.google.com")
+
+    elif "exit" in command:
+        print("Assistant band ho gaya.")
+        break
+
+    else:
+        print("Command samajh nahi aayi.")
